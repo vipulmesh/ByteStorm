@@ -25,3 +25,31 @@ function loadQuestion() {
         button.onclick = () => selectAnswer(option);
         optionsElement.appendChild(button);
     });
+
+let currentQuestionIndex = 0;
+
+function loadQuestion() {
+    const questionElement = document.getElementById("question");
+    const optionsElement = document.getElementById("options");
+    
+    questionElement.textContent = questions[currentQuestionIndex].question;
+    optionsElement.innerHTML = "";
+    
+    questions[currentQuestionIndex].options.forEach(option => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.onclick = () => selectAnswer(option);
+        optionsElement.appendChild(button);
+    });
+}
+
+function selectAnswer(selectedOption) {
+    alert(selectedOption === questions[currentQuestionIndex].answer ? "Correct!" : "Wrong answer!");
+    
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        loadQuestion();
+    } else {
+        document.getElementById("quiz-container").innerHTML = "<h2>Quiz Over!</h2><p>Thanks for playing!</p>";
+    }
+}
