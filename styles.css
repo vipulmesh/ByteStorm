@@ -15,3 +15,11 @@ body {
     background: linear-gradient(to right, #141E30, #243B55);
     color: white;
 }
+.heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
