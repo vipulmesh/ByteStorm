@@ -10,3 +10,18 @@ const questions = [
     { question: "What is the square root of 64?", options: ["6", "7", "8", "9"], answer: 2 },
     { question: "Which device is used to input data into a computer?", options: ["Keyboard", "Printer", "Moniter", "Scanner"], answer: 0 }
 ];
+let currentQuestionIndex = 0;
+
+function loadQuestion() {
+    const questionElement = document.getElementById("question");
+    const optionsElement = document.getElementById("options");
+    
+    questionElement.textContent = questions[currentQuestionIndex].question;
+    optionsElement.innerHTML = "";
+    
+    questions[currentQuestionIndex].options.forEach(option => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.onclick = () => selectAnswer(option);
+        optionsElement.appendChild(button);
+    });
