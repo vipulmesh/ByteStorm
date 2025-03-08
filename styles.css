@@ -98,3 +98,7 @@ button:hover {
     background: linear-gradient(to right, #ff9a9e, #fad0c4);
     color: black;
 }
+#toggle-mode {
+    background: #007bff;
+    color: white;
+}
