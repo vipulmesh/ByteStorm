@@ -60,3 +60,11 @@ button:hover {
 .dark-mode button:hover {
     background: #666;
 }
+.correct {
+    background: #28a745 !important;
+    color: white !important;
+}
+.wrong {
+    background: #dc3545 !important;
+    color: white !important;
+}
