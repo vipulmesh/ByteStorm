@@ -49,3 +49,14 @@ button {
     background: #f0f0f0;
     color: black;
 }
+button:hover {
+    transform: scale(1.05);
+    background: #ddd;
+}
+.dark-mode button {
+    background: #444;
+    color: white;
+}
+.dark-mode button:hover {
+    background: #666;
+}
