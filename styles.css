@@ -106,3 +106,10 @@ button:hover {
     background: #ff9a9e;
     color: black;
 }
+.message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
