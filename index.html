@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INQUIZITIVE - Learn with Comfort</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <title>INQUIZITIVE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="heading">INQUIZITIVE</h1>
-
-    <div class="top-container">
-        <div class="score-container small-button">Score: <span id="score">0</span></div>
-        <button id="toggle-mode" class="small-button">🌙</button>
+    <span class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</span>
+    <div class="quiz-container" id="quiz-container">
+        <h2 id="question">Loading...</h2>
+        <div id="options"></div>
     </div>
-
-    <div class="quiz-container" id="quiz"></div>
-    <p id="message" class="message"></p>
-<script src="script.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
