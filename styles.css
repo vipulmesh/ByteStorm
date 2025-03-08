@@ -102,3 +102,7 @@ button:hover {
     background: #007bff;
     color: white;
 }
+.dark-mode #toggle-mode {
+    background: #ff9a9e;
+    color: black;
+}
