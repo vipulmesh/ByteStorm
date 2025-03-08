@@ -53,3 +53,9 @@ function selectAnswer(selectedOption) {
         document.getElementById("quiz-container").innerHTML = "<h2>Quiz Over!</h2><p>Thanks for playing!</p>";
     }
 }
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+
+loadQuestion();
