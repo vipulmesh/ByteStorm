@@ -11,3 +11,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+.dark-mode {
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: white;
+}
